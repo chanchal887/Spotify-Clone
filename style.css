@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+:root{
+    --backgorund :#121212;
+    --main-text :#b2b2b2;
+    --third :#1f1f1f;
+}
+.pg1{
+    width:100vw ;
+    height: 100vh;
+    background-color: black;
+    padding:10px;
+    color:white;
+
+}
+.pg1 .big{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  gap:10px;
+}
+.pg1 .header {
+
+    display: flex;
+   width: 100%;
+   height: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    align-items: center;
+}
+.pg1 .header .right {
+    display: flex;
+    flex-direction: row;
+    gap:3vh;
+    align-items: center;
+
+}
+
+.pg1 .header .right h2{
+    color:var(--main-text);
+font-size: 20px;
+font-weight: 700;
+cursor: pointer;
+}
+.pg1 .header .right h2:hover{
+color:white;
+transform: scale(1.02);
+}
+
+.pg1 .header .right h1{
+color:var(--main-text) ;
+font-size: 22px;
+}
+.pg1 .header .right .mark{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pg1 .header .right .btn{
+ padding:18px 35px;
+ color:black;
+ background-color: white;
+ border-radius: 30px;
+ cursor: pointer;
+ font-size: 20px;
+}
+.pg1 .header .right .btn:hover{
+    transform: scale(1.02);
+    background-color:rgb(240, 238, 238);
+}
+.pg1 .header .left {
+    display: flex;
+    gap:4vh;
+    align-items:center;
+}
+.pg1 .header .left i{
+    font-size: 40px;
+    cursor: pointer;
+}
+.pg1 .header .left #home{
+background-color: var(--backgorund);
+padding:10px 10px;
+color:white;
+border-radius: 100%;
+}
+.pg1 .header .left .serch{
+    background-color: var(--backgorund);
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 65px;
+    align-items: center;
+    
+    border-radius: 40px;
+    padding: 0 20px;
+    gap:10px;
+    position: relative;
+}
+.pg1 .header .left .serch:hover{
+    border:3px solid white
+}
+.pg1 .header .left .serch input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: 0;
+    height: 100%;
+    outline: 0;
+    color:white;
+    font-size: 30px;
+    
+}
+.pg1 .header #spotify{
+font-size: 60px;
+}
+.pg1 .header .left .serch input:hover{
+    border: 0;
+    outline: 0;
+}
+.pg1 .serch h1{
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   position: relative;
+   bottom: 7px;
+}
+
+.pg1 .cont{
+    
+   
+
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    
+}
+.pg1 .cont .fix {
+    width: 24%;
+    background-color:#121212;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+.pg1 .fix .flex{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.pg1 .fix .top{
+    display: flex;
+    flex-direction: row;
+    justify-content :space-between;
+   margin-bottom: 20px;
+    align-items: center;
+}
+.pg1 .fix h1 ,h2{
+    text-transform: capitalize;
+    font-size: 25px;
+
+}
+.pg1 .fix h2{
+    padding: 12px 25px;
+    background-color: var(--third);
+    border-radius: 30px;
+}
+.pg1 .fix .midbox{
+  
+display: flex;
+flex-direction: column;
+gap:20px;
+height: 350px;
+overflow:scroll;
+
+    
+}
+.pg1 .midbox::-webkit-scrollbar{
+    display: none;
+}
+.pg1 .fix .midbox .mid{
+    padding:18px 15px;
+    background-color: #1f1f1f;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+gap:10px;
+font-weight: 500;
+}
+.pg1 .fix .mid h3{
+    font-size: 24px;
+    letter-spacing: -0.1px;
+    text-transform: none;
+
+}
+.pg1 .fix .mid h4{
+    font-size: 21px;
+    padding-bottom: 20px;
+    font-size: 100;
+}
+.pg1 .fix .mid .btn{
+background-color: white;
+color:black;
+font-size: 20px;
+width: fit-content;
+padding: 10px 20px;
+border-radius: 50px;
+}
+.pg1 .fix li{
+    display: flex;
+    gap:20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.pg1 .fix ul{
+    font-size: 20px;
+    color:var(--main-text);
+    text-transform :capitalize;
+}
+.pg1 .fix .lang p{
+    font-size: 20px;
+    padding: 12px 25px;
+    width: fit-content; 
+    text-transform: capitalize;
+    border: 1px solid white;
+    
+    border-radius: 30px;
+}
+.pg1 .fix .lang i{
+    padding-right: 10px;
+}
+.pg1 .cont .flc{
+    background-color: var(--backgorund);
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 2vw;
+    max-width: 76%;
+    height:calc(100vh - 100px - 80px - 20px);
+
+   
+   
+}
+.pg1 .cont .flc .bigcon{
+    height: 100%;
+     display: flex;
+    overflow: auto;
+    scrollbar-width: none;
+    flex-direction: column;
+    gap:4vw;
+}
+.pg1 .cont .flc .divs{
+   
+    display: flex;
+flex-direction: column;
+gap:20px;
+}
+.pg1 .flc .topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pg1 .flc .topbar h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.pg1 .flc .topbar h4{
+  font-size: 20px;
+
+  cursor: pointer;
+  color:var(--main-text);
+}
+.pg1 .flc .topbar h4:hover{
+    text-decoration: underline;
+}
+.pg1 .flc .cardbox{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap:30px;
+    scrollbar-width: none;
+}
+.pg1 .flc .cards{
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+   position: relative;
+   padding:20px;
+   border-radius: 10px;
+   
+}
+.pg1 .flc .cards:hover{
+    background-color: var(--third);
+}
+.pg1 .flc .cards .img{
+    width: 250px;
+    height: 250px;
+    
+    border-radius: 10px;
+   
+}
+
+.pg1 .flc .cards i{
+    font-size: 30px;
+    background-color: rgb(72, 205, 72);
+    padding:20px;
+    border-radius: 100%;
+    position: relative;
+    color:black;
+   bottom: 60px;
+  left:170px;
+  display:none
+}
+.pg1 .flc .cards i:hover{
+    transform: scale(1.02);
+    background-color: rgb(52, 113, 52);
+}
+.pg1 .flc .cards .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.pg1 .flc .cards .imgart{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    
+}
+.pg1 .flc .cards .imgart img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.pg1 .flc .cards .name{
+    color:white;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.pg1 .flc .cards .abt{
+    color:var(--main-text);
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.pg1 .flc .conf{
+    display: flex;
+    
+    justify-content: space-between;
+    gap:2vw;
+}
+.pg1 .flc .conf .f1{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.pg1 .flc .conf .f2{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+
+}
+.pg1 .flc .conf .f2 i:hover{
+    background-color: var(--main-text);
+    cursor: pointer;
+}
+
+.pg1 .flc .f2 i{
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+   padding: 15px;
+   color:white;
+   background-color:var(--third);
+    border-radius: 100%;
+   
+}
+.pg1 .flc .conf h2{
+    font-size: 26px;
+    font-weight: 800;
+
+}
+.pg1 .flc .conf h3{
+    font-size: 24px;
+    color:var(--main-text);
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.pg1 .flc .conf .f1 h3:hover{
+    text-decoration: underline;
+    color:white;
+
+}
+.pg1 .flc .end h3{
+    font-size: 20px;
+    font-weight: 400;
+    color:var(--main-text);
+    padding-bottom: 20px;
+}
+hr{
+    font-size: 2px;
+    font-weight: 100;
+
+}
+
+.pg1 .footer{
+    padding: 15px 2vw;
+    background-image: linear-gradient(  rgb(171, 53, 160),rgb(75, 158, 190) );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:end;
+    border-radius: 10px;
+}
+.pg1 .footer .fleft{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+
+}
+.pg1 .footer .fleft h3{
+font-size: 21px;
+}
+.pg1 .footer .fleft h4{
+    font-size: 25px;
+    font-weight: 100;
+}
+.pg1 .footer button{
+    padding:17px 30px;
+    font-size: 24px;
+    border-radius: 40px;
+  border:0;
+  outline: 0;
+  background-color: white;
+  color:black;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pg1 .footer button:hover{
+    transform: scale(1.08);
+}
